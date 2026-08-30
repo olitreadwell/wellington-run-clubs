@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-08-30T11:29:43.186Z",
+  "exportedAt": "2026-08-30T20:53:18.048Z",
   "license": "Public data only. Opt-out respected — see /opt-out.",
   "items": [
     {
@@ -546,6 +546,245 @@
         "url": "https://www.facebook.com/wellingtonhash"
       },
       "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "reddy-to-run",
+      "name": "Reddy to Run",
+      "slug": "reddy-to-run",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Petone",
+      "lat": -41.225,
+      "lng": 174.873,
+      "website": "https://reddytorun.org.nz",
+      "socials": {
+        "instagram": "https://www.instagram.com/reddytorun/"
+      },
+      "categories": ["social", "road", "beginners", "walkers"],
+      "description": "Community run club based at Petone Beach: 5K run, walk or jog every Monday and Wednesday 6:30am and Thursday 6:15pm from outside Seashore Cabaret. Flat, beginner-friendly waterfront route on The Esplanade.",
+      "source": {
+        "label": "Reddy to Run",
+        "url": "https://reddytorun.org.nz/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "mo-bros-wellington",
+      "name": "Mo Bros Wellington",
+      "slug": "mo-bros-wellington",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "socials": {
+        "instagram": "https://www.instagram.com/mo_bros_wellington/"
+      },
+      "categories": ["social", "road", "mens-health"],
+      "description": "Casual run club for men's health, part of the Movember \"[mo]re than a run\" movement. Community runs and events across Wellington — run, walk, or take on the gym challenge.",
+      "source": {
+        "label": "Mo Bros Wellington Instagram",
+        "url": "https://www.instagram.com/mo_bros_wellington/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wellington-runners-and-walkers",
+      "name": "Wellington Runners and Walkers",
+      "slug": "wellington-runners-and-walkers",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kilbirnie",
+      "lat": -41.318,
+      "lng": 174.795,
+      "website": "http://wellyrunwalk.org.nz",
+      "socials": {
+        "facebook": "https://www.facebook.com/wellingtonrunnersandwalkers/",
+        "other": ["https://www.strava.com/clubs/wellyrunwalk"]
+      },
+      "categories": ["social", "road", "walkers", "beginners"],
+      "description": "Fun, social and chatty club meeting weekly on Sunday mornings at Kilbirnie's ASB Centre. All speeds, distances, ages and temperaments welcome — runs and walks across Wellington.",
+      "source": {
+        "label": "Wellington Runners and Walkers Meetup",
+        "url": "https://www.meetup.com/wellington-runners-and-walkers/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "hutt-valley-runners",
+      "name": "Hutt Valley Runners",
+      "slug": "hutt-valley-runners",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Lower Hutt",
+      "lat": -41.211,
+      "lng": 174.905,
+      "website": "https://huttvalleyrunners.nz",
+      "categories": ["social", "road", "trail", "beginners"],
+      "description": "Social distance running club meeting 8am every Sunday at Huia Pool, Lower Hutt. Caters for all levels from recreational to ultra distance, with multiple drop-off points on most courses.",
+      "source": {
+        "label": "Hutt Valley Runners",
+        "url": "https://huttvalleyrunners.nz/our-club/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "261-fearless-wellington",
+      "name": "261 Fearless – Wellington",
+      "slug": "261-fearless-wellington",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "website": "https://www.261fearless.org/261clubnewzealand/",
+      "socials": {
+        "instagram": "https://www.instagram.com/261fearlessclubnz/"
+      },
+      "categories": ["social", "women", "road", "beginners"],
+      "description": "Wellington chapter of 261 Fearless, a global women's running club. Social, beginner-friendly road runs every Saturday 9am.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/261-fearless-wellington"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "445-run-club-wellington",
+      "name": "445 RUN CLUB – Wellington",
+      "slug": "445-run-club-wellington",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Oriental Bay",
+      "lat": -41.293,
+      "lng": 174.79,
+      "website": "https://www.445runclub.com",
+      "socials": {
+        "instagram": "https://www.instagram.com/445_run_club/"
+      },
+      "categories": ["social", "road", "early-morning"],
+      "description": "Early-morning road running club meeting every Friday 4:45am at 236 Oriental Parade, Oriental Bay. Social runs before the workday starts.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/445-run-club-wellington"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "early-bird-run-crew",
+      "name": "Early Bird Run Crew",
+      "slug": "early-bird-run-crew",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Queens Wharf",
+      "lat": -41.286,
+      "lng": 174.78,
+      "categories": ["social", "road", "beginners", "early-morning"],
+      "description": "Beginner-friendly early-morning road running crew meeting Tuesdays and Thursdays 6:30am at Queens Wharf, Wellington CBD.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/early-bird-run-crew-wellington"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "jog-on-wellington",
+      "name": "Jog On",
+      "slug": "jog-on-wellington",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "socials": {
+        "instagram": "https://www.instagram.com/jog.onnn/"
+      },
+      "categories": ["social", "road", "beginners", "coffee"],
+      "description": "Very casual Friday-morning jog in Wellington at a conversational pace, with coffee after. Slow runners especially welcome.",
+      "source": {
+        "label": "Jog On Instagram",
+        "url": "https://www.instagram.com/jog.onnn/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "capital-hash-house-harriers",
+      "name": "Capital Hash House Harriers",
+      "slug": "capital-hash-house-harriers",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "website": "https://www.sporty.co.nz/capitalh3",
+      "socials": {
+        "facebook": "https://www.facebook.com/Capitalhhh/"
+      },
+      "categories": ["social", "hashing", "trail"],
+      "description": "Wellington hash chapter: social, non-competitive runs with trails marked by the hare, followed by food and drinks. A friendly pint is part of the deal.",
+      "source": {
+        "label": "Capital Hash House Harriers",
+        "url": "https://www.sporty.co.nz/capitalh3"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wrec-kd-wilderness-running",
+      "name": "WREC'kd (Wilderness Running and Endurance Collective)",
+      "slug": "wrec-kd-wilderness-running",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Wellington region",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "website": "https://wreckd.org.nz",
+      "categories": ["trail", "endurance", "social"],
+      "description": "Incorporated society promoting endurance and adventure running in New Zealand's hills and mountains. Puts on events for members and collaborates with like-minded groups.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/wilderness-running-and-endurance-collective"
+      },
+      "lastVerified": "2026-08-31",
       "verified": false,
       "active": true,
       "optOut": false,

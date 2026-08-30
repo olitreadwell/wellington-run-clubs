@@ -19,6 +19,13 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | [Karori Athletics](https://www.karoriathletics.org.nz) | Karori AAC listing details | ✅ working |
 | [Wellington Marathon Clinic](https://www.wmc.org.nz) | Marathon Clinic listing details | ✅ working |
 | [Victoria University Athletics](https://vuwathletics.wordpress.com) | VUW Athletics listing details | ✅ working |
+| [NZ Running club directory](https://www.nzrunning.co.nz/run-clubs/city/wellington) | casual/social run clubs (261 Fearless, 445, Early Bird, WREC'kd) | ✅ working |
+| [Reddy to Run](https://reddytorun.org.nz) | Petone beach run club details | ✅ working |
+| [Wellington Runners and Walkers Meetup](https://www.meetup.com/wellington-runners-and-walkers/) | Sunday run/walk club details | ✅ working |
+| [Hutt Valley Runners](https://huttvalleyrunners.nz) | Sunday social distance club details | ✅ working |
+| [Capital Hash House Harriers](https://www.sporty.co.nz/capitalh3) | hash chapter details | ✅ working |
+| [Mo Bros Wellington Instagram](https://www.instagram.com/mo_bros_wellington/) | Movember men's health run club | ✅ working |
+| [Jog On Instagram](https://www.instagram.com/jog.onnn/) | Friday morning casual jog | ✅ working |
 <!-- SEED-SOURCES -->
 
 Projects run `pnpm run setup` to list their own initial sources here; the
