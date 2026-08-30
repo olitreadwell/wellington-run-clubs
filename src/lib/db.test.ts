@@ -24,7 +24,7 @@ describe('snapshot data source', () => {
     expect(total).toBeGreaterThan(0);
     const cityTotal = await countItems({ city: 'Wellington' });
     expect(cityTotal).toBeGreaterThan(0);
-    const categoryTotal = await countItems({ category: 'example' });
+    const categoryTotal = await countItems({ category: 'harriers' });
     expect(categoryTotal).toBeGreaterThan(0);
     expect(cityTotal).toBeLessThanOrEqual(total);
   });

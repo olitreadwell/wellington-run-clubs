@@ -4,7 +4,7 @@ import { expect, test } from '@playwright/test';
 const routes = [
   '/',
   '/items',
-  '/items/example-place-one',
+  '/items/wellington-scottish-athletics',
   '/search',
   '/map',
   '/opt-out',

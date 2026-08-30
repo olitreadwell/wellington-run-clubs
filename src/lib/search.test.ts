@@ -4,14 +4,14 @@ import { searchItems } from '@/lib/search';
 
 describe('searchItems', () => {
   it('ranks name matches above description matches', () => {
-    const query = 'Example Place';
+    const query = 'Harrier';
     const results = searchItems(seedItems, query);
     expect(results.length).toBeGreaterThan(0);
-    expect(results[0].name).toContain('Example Place');
+    expect(results[0].name).toContain('Harrier');
   });
 
   it('matches categories and locations', () => {
-    expect(searchItems(seedItems, 'thrift').length).toBeGreaterThan(0);
+    expect(searchItems(seedItems, 'trail').length).toBeGreaterThan(0);
     expect(searchItems(seedItems, 'petone').length).toBeGreaterThan(0);
   });
 
@@ -21,6 +21,6 @@ describe('searchItems', () => {
 
   it('excludes opted-out items from results', () => {
     const items = [{ ...seedItems[0], optOut: true }];
-    expect(searchItems(items, 'example')).toEqual([]);
+    expect(searchItems(items, 'scottish')).toEqual([]);
   });
 });

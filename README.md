@@ -1,4 +1,4 @@
-# Open Items Directory
+# Run Clubs in Wellington
 
 [![CI](https://github.com/olitreadwell/dataset-directory-template/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/dataset-directory-template/actions/workflows/ci.yml)
 

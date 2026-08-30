@@ -16,12 +16,16 @@ test('homepage renders and health answers', async ({ page, request }) => {
 test('directory pages render from the snapshot', async ({ page }) => {
   await page.goto('/items');
   await expect(page.getByRole('heading', { name: `All ${siteConfig.thingPlural}` })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Example Place One' })).toBeVisible();
+  await expect(
+    page.getByRole('link', { name: 'Wellington Scottish Athletics Club' })
+  ).toBeVisible();
 });
 
 test('item detail shows community and data provenance', async ({ page }) => {
-  await page.goto('/items/example-place-one');
-  await expect(page.getByRole('heading', { name: 'Example Place One' })).toBeVisible();
+  await page.goto('/items/wellington-scottish-athletics');
+  await expect(
+    page.getByRole('heading', { name: 'Wellington Scottish Athletics Club' })
+  ).toBeVisible();
   await expect(page.getByText('Last verified')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Help keep this listing right' })).toBeVisible();
 });

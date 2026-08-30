@@ -2,7 +2,13 @@
 // dataset endpoints behave as documented (ETag round-trips, 404s, CSV).
 // Usage: BASE_URL=http://localhost:3521 node scripts/contract-test.mjs
 
+import { readFileSync } from 'node:fs';
+
 const base = process.env.BASE_URL ?? 'http://localhost:3001';
+const snapshot = JSON.parse(
+  readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8')
+);
+const seedId = snapshot.items?.[0]?.id ?? 'wellington-scottish-athletics';
 
 let failures = 0;
 
@@ -30,10 +36,10 @@ async function main() {
     for (const method of methods) {
       if (method !== 'get') continue;
       const operation = spec.paths[path][method];
-      let resolvedPath = path.replace(/\[id\]/g, 'example-place-one');
+      let resolvedPath = path.replace(/\[id\]/g, seedId);
       for (const param of operation.parameters ?? []) {
         if (param.in === 'path') {
-          resolvedPath = resolvedPath.replace(`{${param.name}}`, 'example-place-one');
+          resolvedPath = resolvedPath.replace(`{${param.name}}`, seedId);
         }
       }
       const url = new URL(`${base}${resolvedPath}`);
@@ -54,7 +60,7 @@ async function main() {
     'every item has id + name'
   );
 
-  const detailRes = await fetch(`${base}/api/v1/items/example-place-one`);
+  const detailRes = await fetch(`${base}/api/v1/items/${seedId}`);
   check(detailRes.status === 200, 'GET /api/v1/items/{id} resolves a seed item');
   const missingRes = await fetch(`${base}/api/v1/items/definitely-not-a-listing`);
   check(missingRes.status === 404, 'GET /api/v1/items/{id} 404 for unknown');

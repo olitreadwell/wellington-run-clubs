@@ -24,8 +24,8 @@ describe('item repository (snapshot mode)', () => {
     expect(all.length).toBe(seedItems.length);
     const city = await listItems({ city: 'Wellington' });
     expect(city.every((item) => item.city === 'Wellington')).toBe(true);
-    const category = await listItems({ category: 'thrift' });
-    expect(category.every((item) => item.categories.includes('thrift'))).toBe(true);
+    const category = await listItems({ category: 'harriers' });
+    expect(category.every((item) => item.categories.includes('harriers'))).toBe(true);
     const page = await listItems({ limit: 1, offset: 0 });
     expect(page.length).toBe(1);
   });
@@ -39,9 +39,9 @@ describe('item repository (snapshot mode)', () => {
     const cities = await listCities();
     expect(cities.find((c) => c.city === 'Wellington')?.count).toBeGreaterThan(0);
     const categories = await listCategories();
-    expect(categories.some((c) => c.category === 'example')).toBe(true);
+    expect(categories.some((c) => c.category === 'harriers')).toBe(true);
     const sources = await listSources();
-    expect(sources).toContain('Template seed data');
+    expect(sources).toContain('Athletics Wellington club contacts');
   });
 
   it('records analytics to stdout in snapshot mode', async () => {

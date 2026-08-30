@@ -1,74 +1,551 @@
 {
   "version": "seed",
-  "exportedAt": "2026-08-29T08:18:28.574Z",
+  "exportedAt": "2026-08-30T10:56:41.479Z",
   "license": "Public data only. Opt-out respected — see /opt-out.",
   "items": [
     {
-      "id": "example-place-one",
-      "name": "Example Place One",
-      "slug": "example-place-one",
+      "id": "wellington-scottish-athletics",
+      "name": "Wellington Scottish Athletics Club",
+      "slug": "wellington-scottish-athletics",
       "city": "Wellington",
       "region": "Wellington region",
-      "location": "CBD",
-      "lat": -41.2904,
-      "lng": 174.7787,
-      "website": "https://example.com",
-      "categories": ["example"],
-      "description": "Placeholder listing proving the template pipeline: replace this file with real data.",
-      "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
+      "location": "Mount Cook",
+      "lat": -41.302,
+      "lng": 174.777,
+      "website": "https://scottishathletics.org.nz",
+      "socials": {
+        "facebook": "https://www.facebook.com/wellingtonscottish"
       },
-      "lastVerified": "2026-08-01",
+      "categories": ["athletics", "harriers", "cross-country", "track"],
+      "description": "One of New Zealand's oldest athletics clubs, based at Prince of Wales Park. Runs track and field, cross-country, road and trail programmes for all ages and abilities.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
       "verified": false,
       "active": true,
       "optOut": false,
       "calendarDates": []
     },
     {
-      "id": "example-place-two",
-      "name": "Example Place Two",
-      "slug": "example-place-two",
+      "id": "wellington-harrier-athletic-club",
+      "name": "Wellington Harrier Athletic Club (WHAC)",
+      "slug": "wellington-harrier-athletic-club",
       "city": "Wellington",
       "region": "Wellington region",
-      "location": "Te Aro",
-      "lat": -41.2939,
-      "lng": 174.7826,
-      "website": "https://example.com",
-      "categories": ["example", "family"],
-      "description": "Second placeholder listing with calendar dates for the iCal feed.",
+      "location": "Mt Wellington",
+      "lat": -41.3117,
+      "lng": 174.7883,
+      "website": "https://whac.org.nz",
+      "categories": ["athletics", "harriers", "cross-country", "track"],
+      "description": "Harrier and athletics club based at Alexandra Road, Mt Wellington. Weekly club runs, cross-country and road racing through winter, plus track and field in summer.",
       "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
       },
-      "lastVerified": "2026-08-01",
+      "lastVerified": "2026-08-30",
       "verified": false,
       "active": true,
       "optOut": false,
-      "calendarDates": [
-        {
-          "start": "2026-09-05",
-          "label": "Market day"
-        }
-      ]
+      "calendarDates": []
     },
     {
-      "id": "example-place-three",
-      "name": "Example Place Three",
-      "slug": "example-place-three",
+      "id": "olympic-harrier-athletic-club",
+      "name": "Olympic Harrier & Athletic Club",
+      "slug": "olympic-harrier-athletic-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Johnsonville",
+      "lat": -41.222,
+      "lng": 174.806,
+      "website": "https://www.olympicharriers.nz",
+      "categories": ["athletics", "harriers", "cross-country", "track"],
+      "description": "Harrier and athletic club based in Johnsonville with clubrooms there. Offers cross-country, road running and track and field for juniors and seniors.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "hutt-valley-harriers",
+      "name": "Hutt Valley Harrier & AA Club Inc",
+      "slug": "hutt-valley-harriers",
       "city": "Lower Hutt",
       "region": "Wellington region",
       "location": "Petone",
       "lat": -41.2256,
       "lng": 174.8735,
-      "website": "https://example.com",
-      "categories": ["example", "thrift"],
-      "description": "Third placeholder listing outside the start city.",
+      "website": "https://hvh.org.nz",
+      "categories": ["athletics", "harriers", "cross-country", "track"],
+      "description": "Harrier and athletics club based at Petone Recreation Grounds. Weekly club runs, cross-country and road racing, and track and field for all levels.",
       "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
       },
-      "lastVerified": "2025-01-15",
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "trentham-united-harriers",
+      "name": "Trentham United Harriers & Walkers Club Inc",
+      "slug": "trentham-united-harriers",
+      "city": "Upper Hutt",
+      "region": "Wellington region",
+      "location": "Trentham",
+      "lat": -41.1325,
+      "lng": 175.0298,
+      "website": "https://www.trenthamunited.com",
+      "categories": ["athletics", "harriers", "cross-country", "walkers"],
+      "description": "Harrier club based at Trentham Memorial Park, Upper Hutt. Runs and walks for all abilities through winter cross-country and road seasons.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "upper-hutt-athletic-club",
+      "name": "Upper Hutt Athletic Club Inc",
+      "slug": "upper-hutt-athletic-club",
+      "city": "Upper Hutt",
+      "region": "Wellington region",
+      "location": "Trentham",
+      "lat": -41.1325,
+      "lng": 175.0298,
+      "socials": {
+        "facebook": "https://www.facebook.com/Upper-Hutt-Athletic-Club-120174288130264"
+      },
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Athletics club based at Trentham Memorial Park, Upper Hutt, with junior and senior track and field, cross-country and road programmes.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wainuiomata-aa-hc",
+      "name": "Wainuiomata AA & HC",
+      "slug": "wainuiomata-aa-hc",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Wainuiomata",
+      "lat": -41.2733,
+      "lng": 174.9645,
+      "categories": ["athletics", "harriers", "cross-country", "track"],
+      "description": "Amateur athletics and harrier club based at Richard Prouse Park, Wainuiomata. Cross-country, road and track programmes for the local community.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "lower-hutt-aac",
+      "name": "Lower Hutt AAC",
+      "slug": "lower-hutt-aac",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Lower Hutt",
+      "lat": -41.209,
+      "lng": 174.908,
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Amateur athletics club in Lower Hutt offering track and field, cross-country and road running for juniors and seniors.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "kiwi-athletic-club",
+      "name": "Kiwi Athletic Club",
+      "slug": "kiwi-athletic-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Newtown",
+      "lat": -41.312,
+      "lng": 174.783,
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Wellington athletics club based at Newtown Stadium, offering track and field, cross-country and road running.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "victoria-university-athletic-club",
+      "name": "Victoria University Athletic Club",
+      "slug": "victoria-university-athletic-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kelburn",
+      "lat": -41.2902,
+      "lng": 174.7689,
+      "website": "https://vuwathletics.wordpress.com",
+      "socials": {
+        "facebook": "https://www.facebook.com/vuwathletics"
+      },
+      "categories": ["athletics", "harriers", "students", "track"],
+      "description": "Competitive athletics and harrier club for Victoria University students and staff, based at the Vic Uni Recreation Centre, Kelburn.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "karori-amateur-athletics-club",
+      "name": "Karori Amateur Athletics Club",
+      "slug": "karori-amateur-athletics-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Karori",
+      "lat": -41.283,
+      "lng": 174.74,
+      "website": "https://www.karoriathletics.org.nz",
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Community athletics club in Karori with junior and senior track and field, cross-country and road running.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "aurora-harrier-club",
+      "name": "Aurora Harrier Club",
+      "slug": "aurora-harrier-club",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Porirua",
+      "lat": -41.14,
+      "lng": 174.85,
+      "website": "https://www.sporty.co.nz/auroraharriers/Home",
+      "categories": ["athletics", "harriers", "cross-country"],
+      "description": "Harrier club in Porirua offering cross-country and road running for the local community.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "mana-aac",
+      "name": "Mana AAC",
+      "slug": "mana-aac",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Whitby",
+      "lat": -41.1181,
+      "lng": 174.8949,
+      "website": "https://www.manaathletics.co.nz",
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Amateur athletics club based at Adventure Park, Whitby, Porirua. Track and field, cross-country and road running for juniors and seniors.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "titahi-bay-amateur-athletics-club",
+      "name": "Titahi Bay Amateur Athletics Club",
+      "slug": "titahi-bay-amateur-athletics-club",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Titahi Bay",
+      "lat": -41.1103,
+      "lng": 174.8397,
+      "categories": ["athletics", "track", "cross-country"],
+      "description": "Community athletics club based at Kura Park, Titahi Bay, with junior and senior track and field, cross-country and road running.",
+      "source": {
+        "label": "Athletics Wellington club contacts",
+        "url": "https://athleticswellington.org.nz/about-us/club-contacts/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "kapiti-running-and-tri-club",
+      "name": "Kapiti Running & Tri Club",
+      "slug": "kapiti-running-and-tri-club",
+      "city": "Paraparaumu",
+      "region": "Wellington region",
+      "location": "Kapiti Coast",
+      "lat": -40.9167,
+      "lng": 175.0167,
+      "website": "https://www.sporty.co.nz/kapitirunningandtriclub",
+      "categories": ["athletics", "harriers", "triathlon", "cross-country"],
+      "description": "Running and triathlon club on the Kapiti Coast with group runs, training squads and racing for all abilities.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wellington-marathon-clinic",
+      "name": "Wellington Marathon Clinic",
+      "slug": "wellington-marathon-clinic",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "website": "https://www.wmc.org.nz",
+      "categories": ["coaching", "road", "social"],
+      "description": "Coaching-focused running group helping runners train for marathons and other distances, with structured long-run programmes.",
+      "source": {
+        "label": "Wellington Marathon Clinic",
+        "url": "https://www.wmc.org.nz"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wellington-big-sunday-runs",
+      "name": "Wellington Big Sunday Runs (BSR)",
+      "slug": "wellington-big-sunday-runs",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Te Aro",
+      "lat": -41.2969,
+      "lng": 174.7775,
+      "socials": {
+        "facebook": "https://www.facebook.com/groups/1617400398491286"
+      },
+      "categories": ["social", "trail"],
+      "description": "Social trail-running crew meeting every Tuesday 6:45pm from the Southern Cross pub. Big runs on trails with a hill or two; beer and yarns afterwards encouraged.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/bsr/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "femmi-run-club-wellington",
+      "name": "Femmi Run Club Wellington",
+      "slug": "femmi-run-club-wellington",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Te Aro",
+      "lat": -41.2875,
+      "lng": 174.783,
+      "socials": {
+        "instagram": "https://instagram.com/femmi.co"
+      },
+      "categories": ["social", "women", "road"],
+      "description": "Social weekly run for women every Friday 6:30am from Raglan Roast Chaffers, with 4-6km options for all levels. Newcomers always welcome.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/femmi-run-club/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "life-in-motion-run-club",
+      "name": "Life In Motion Run Club",
+      "slug": "life-in-motion-run-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Newlands",
+      "lat": -41.235,
+      "lng": 174.81,
+      "socials": {
+        "facebook": "https://www.facebook.com/groups/1778121582490894"
+      },
+      "categories": ["social", "trail"],
+      "description": "Social trail-running group meeting Wednesday 6:30pm at Pukehuia Park, Newlands and Sunday 8am on Wellington trails. All abilities welcome.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/life-in-motion/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "vic-uni-run-club",
+      "name": "Vic Uni Run Club",
+      "slug": "vic-uni-run-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kelburn",
+      "lat": -41.2902,
+      "lng": 174.7689,
+      "socials": {
+        "facebook": "https://www.facebook.com/groups/2248648845408862"
+      },
+      "categories": ["social", "students", "road"],
+      "description": "Social weekly run every Monday 6:30pm from the Kelburn campus Recreation Centre. No-strings-attached runs for all abilities, especially students.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/vic-uni-run-club/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "worm-wellington-running-meetup",
+      "name": "WoRM (Wellington Running Meetup)",
+      "slug": "worm-wellington-running-meetup",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2905,
+      "lng": 174.782,
+      "socials": {
+        "facebook": "https://www.meetup.com/wellingtonrunningmeetup/"
+      },
+      "categories": ["social", "road", "trail"],
+      "description": "Social running meetup with regular runs most days of the week (Tues 6:15pm, Wed 6:15pm, Thu 6:30pm from Te Papa rear). Roads and trails, speeds for everyone.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/worm/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "zone-blue-run-club",
+      "name": "Zone Blue Run Club",
+      "slug": "zone-blue-run-club",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Oriental Bay",
+      "lat": -41.293,
+      "lng": 174.79,
+      "socials": {
+        "facebook": "https://www.facebook.com/groups/783741242941223"
+      },
+      "categories": ["social", "road"],
+      "description": "Social run club meeting Saturdays 8am at Freyberg Pool, Oriental Bay. 30-45 minute runs focused on connection and wellbeing as much as running.",
+      "source": {
+        "label": "Run Wellington clubs",
+        "url": "https://run.runwellington.com/clubs/zone-blue/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wellington-frontrunners",
+      "name": "Wellington Frontrunners",
+      "slug": "wellington-frontrunners",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "socials": {
+        "facebook": "https://www.facebook.com/wellingtonfrontrunners"
+      },
+      "categories": ["social", "lgbtq", "road"],
+      "description": "LGBTQ+ friendly social running club in Wellington, welcoming runners of all abilities and their allies.",
+      "source": {
+        "label": "Wellington Frontrunners Facebook",
+        "url": "https://www.facebook.com/wellingtonfrontrunners"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "wellington-hash-house-harriers",
+      "name": "Wellington Hash House Harriers",
+      "slug": "wellington-hash-house-harriers",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "CBD",
+      "lat": -41.2904,
+      "lng": 174.7787,
+      "socials": {
+        "facebook": "https://www.facebook.com/wellingtonhash"
+      },
+      "categories": ["social", "hashing", "trail"],
+      "description": "Social hashing club: weekly non-competitive runs with trails marked by the hare, followed by food and drinks. All ages and abilities welcome.",
+      "source": {
+        "label": "Wellington Hash House Harriers Facebook",
+        "url": "https://www.facebook.com/wellingtonhash"
+      },
+      "lastVerified": "2026-08-30",
       "verified": false,
       "active": true,
       "optOut": false,

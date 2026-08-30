@@ -34,8 +34,12 @@ describe('seed dataset integrity', () => {
     }
   });
 
-  it('marks at least one seed item as stale for UI coverage', () => {
-    expect(seedItems.some((item) => item.lastVerified < '2026-01-01')).toBe(true);
+  it('keeps every seed item freshly verified', () => {
+    const cutoff = new Date();
+    cutoff.setUTCDate(cutoff.getUTCDate() - 180);
+    for (const item of seedItems) {
+      expect(new Date(`${item.lastVerified}T00:00:00Z`) >= cutoff).toBe(true);
+    }
   });
 });
 

@@ -60,8 +60,8 @@ describe('item repository (db mode)', () => {
       listSources(),
     ]);
     expect(cities.length).toBeGreaterThan(0);
-    expect(categories.some((c) => c.category === 'example')).toBe(true);
-    expect(sources).toContain('Template seed data');
+    expect(categories.some((c) => c.category === 'harriers')).toBe(true);
+    expect(sources).toContain('Athletics Wellington club contacts');
   });
 
   it('fetches one item and misses unknown ones', async () => {

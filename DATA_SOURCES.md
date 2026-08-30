@@ -8,8 +8,17 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 
 | Source | What we get | Status |
 | --- | --- | --- |
-| `example-listings` (this repo's `scripts/examples/listing-entries.json`) | seed pipeline demo | ✅ offline demo |
-
+| [Athletics Wellington club contacts](https://athleticswellington.org.nz/about-us/club-contacts/) | registered club list (names, areas, contacts) | ✅ working |
+| [Run Wellington clubs](https://run.runwellington.com/clubs/) | social run clubs with meet times and links | ✅ working |
+| [Wellington Harrier Athletic Club](https://whac.org.nz) | WHAC listing details | ✅ working |
+| [Wellington Scottish Athletics](https://scottishathletics.org.nz) | Scottish listing details | ✅ working |
+| [Hutt Valley Harriers](https://hvh.org.nz) | Hutt Valley Harriers listing details | ✅ working |
+| [Olympic Harriers](https://www.olympicharriers.nz) | Olympic Harriers listing details | ✅ working |
+| [Trentham United Harriers](https://www.trenthamunited.com) | Trentham United listing details | ✅ working |
+| [Mana Athletics](https://www.manaathletics.co.nz) | Mana AAC listing details | ✅ working |
+| [Karori Athletics](https://www.karoriathletics.org.nz) | Karori AAC listing details | ✅ working |
+| [Wellington Marathon Clinic](https://www.wmc.org.nz) | Marathon Clinic listing details | ✅ working |
+| [Victoria University Athletics](https://vuwathletics.wordpress.com) | VUW Athletics listing details | ✅ working |
 <!-- SEED-SOURCES -->
 
 Projects run `pnpm run setup` to list their own initial sources here; the
