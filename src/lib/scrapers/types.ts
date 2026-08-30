@@ -90,6 +90,7 @@ export function mergeScrapedListings(
         verified: false,
         active: true,
         optOut: false,
+        schedule: [],
         calendarDates: [],
       };
     });

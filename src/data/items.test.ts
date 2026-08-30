@@ -25,6 +25,32 @@ describe('seed dataset integrity', () => {
     }
   });
 
+  it('keeps schedule times in 24h HH:mm format and days valid', () => {
+    const validDays = new Set([
+      'monday',
+      'tuesday',
+      'wednesday',
+      'thursday',
+      'friday',
+      'saturday',
+      'sunday',
+    ]);
+    for (const item of seedItems) {
+      for (const entry of item.schedule) {
+        expect(validDays.has(entry.day)).toBe(true);
+        if (entry.time) expect(entry.time).toMatch(/^([01]\d|2[0-3]):[0-5]\d$/);
+      }
+    }
+  });
+
+  it('marks parkrun events with a free weekly Saturday schedule', () => {
+    const parkruns = seedItems.filter((item) => item.categories.includes('parkrun'));
+    expect(parkruns.length).toBeGreaterThanOrEqual(6);
+    for (const event of parkruns) {
+      expect(event.schedule).toContainEqual({ day: 'saturday', time: '08:00', timeLabel: '8am' });
+    }
+  });
+
   it('keeps calendar date ranges consistent', () => {
     for (const item of seedItems) {
       for (const date of item.calendarDates) {

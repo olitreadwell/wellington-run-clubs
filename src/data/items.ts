@@ -447,16 +447,19 @@ const rawItems = [
     lat: -41.293,
     lng: 174.79,
     description:
-      'Social run club meeting Saturdays 8am at Freyberg Pool, Oriental Bay. 30-45 minute runs focused on connection and wellbeing as much as running.',
+      'Social run club founded by run coach Ben Edusei, welcoming runners of all levels. Weekly runs include a chill Tuesday social jog at Shed 1, Wednesday speed work, a Saturday community run with coffee, and a Sunday long run.',
     categories: ['social', 'road'],
+    website: 'https://www.benedusei.com/zone-blue-run-club',
     socials: {
       facebook: 'https://www.facebook.com/groups/783741242941223',
     },
     source: {
-      label: 'Run Wellington clubs',
-      url: 'https://run.runwellington.com/clubs/zone-blue/',
+      label: 'Zone Blue Run Club (Ben Edusei)',
+      url: 'https://www.benedusei.com/zone-blue-run-club',
     },
-    lastVerified: '2026-08-30',
+    notes:
+      'Same organiser (Ben Edusei) as Mo Bros Wellington and the Movember "[mo]re than a run" events.',
+    lastVerified: '2026-08-31',
     verified: false,
   },
   {
@@ -537,6 +540,8 @@ const rawItems = [
       label: 'Mo Bros Wellington Instagram',
       url: 'https://www.instagram.com/mo_bros_wellington/',
     },
+    notes:
+      'Same organiser (run coach Ben Edusei) as Zone Blue Run Club; "[mo]re than a run" is the Movember community-run series.',
     lastVerified: '2026-08-31',
     verified: false,
   },
@@ -706,7 +711,182 @@ const rawItems = [
     lastVerified: '2026-08-31',
     verified: false,
   },
+  {
+    id: 'waitangi-parkrun',
+    slug: 'waitangi-parkrun',
+    name: 'Waitangi parkrun',
+    city: 'Wellington',
+    region: 'Wellington region',
+    location: 'Te Aro',
+    lat: -41.291,
+    lng: 174.785,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am at Waitangi Park, Te Aro. Register once on the parkrun site and bring your barcode — all paces welcome.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road'],
+    website: 'https://www.parkrun.co.nz/waitangi/',
+    source: {
+      label: 'NZ Running club directory',
+      url: 'https://www.nzrunning.co.nz/run-clubs/waitangi-parkrun',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
+  {
+    id: 'lower-hutt-parkrun',
+    slug: 'lower-hutt-parkrun',
+    name: 'Lower Hutt parkrun',
+    city: 'Lower Hutt',
+    region: 'Wellington region',
+    location: 'Lower Hutt',
+    lat: -41.209,
+    lng: 174.908,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am on the Hutt riverbank. Register once on the parkrun site and bring your barcode — all paces welcome.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road'],
+    website: 'https://www.parkrun.co.nz/lowerhutt/',
+    source: {
+      label: 'NZ Running club directory',
+      url: 'https://www.nzrunning.co.nz/run-clubs/lower-hutt-parkrun',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
+  {
+    id: 'trentham-memorial-parkrun',
+    slug: 'trentham-memorial-parkrun',
+    name: 'Trentham Memorial parkrun',
+    city: 'Upper Hutt',
+    region: 'Wellington region',
+    location: 'Trentham',
+    lat: -41.1325,
+    lng: 175.0298,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am around Trentham Memorial Park. Register once on the parkrun site and bring your barcode — all paces welcome.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road'],
+    website: 'https://www.parkrun.co.nz/trenthammemorial/',
+    source: {
+      label: 'Trentham Memorial parkrun Facebook',
+      url: 'https://www.facebook.com/trenthammemorialparkrun/',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
+  {
+    id: 'ara-harakeke-parkrun',
+    slug: 'ara-harakeke-parkrun',
+    name: 'Ara Harakeke parkrun',
+    city: 'Porirua',
+    region: 'Wellington region',
+    location: 'Plimmerton',
+    lat: -41.08,
+    lng: 174.87,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am along the Ara Harakeke Pathway at Plimmerton. Register once on the parkrun site and bring your barcode.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road', 'trail'],
+    website: 'https://www.parkrun.co.nz/araharakeke/',
+    source: {
+      label: 'NZ Running club directory',
+      url: 'https://www.nzrunning.co.nz/run-clubs/ara-harakeke-parkrun',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
+  {
+    id: 'kapiti-coast-parkrun',
+    slug: 'kapiti-coast-parkrun',
+    name: 'Kapiti Coast parkrun',
+    city: 'Waikanae',
+    region: 'Wellington region',
+    location: 'Kapiti Coast',
+    lat: -40.875,
+    lng: 175.064,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am along the Waikanae River track. Register once on the parkrun site and bring your barcode — all welcome.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road', 'trail'],
+    website: 'https://www.parkrun.co.nz/kapiticoast/',
+    source: {
+      label: 'Kapiti Coast parkrun Facebook',
+      url: 'https://www.facebook.com/KapitiCoastparkrun/',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
+  {
+    id: 'otaki-river-parkrun',
+    slug: 'otaki-river-parkrun',
+    name: 'Otaki River parkrun',
+    city: 'Otaki',
+    region: 'Wellington region',
+    location: 'Kapiti Coast',
+    lat: -40.7583,
+    lng: 175.155,
+    description:
+      'Free, weekly, timed 5km run, jog or walk every Saturday 8am on the Ōtaki Riverbank. Register once on the parkrun site and bring your barcode — all welcome.',
+    categories: ['parkrun', 'community', 'beginners', 'walkers', 'road', 'trail'],
+    website: 'https://www.parkrun.co.nz/otakiriver/',
+    source: {
+      label: 'NZ Running club directory',
+      url: 'https://www.nzrunning.co.nz/run-clubs/otaki-river-parkrun',
+    },
+    lastVerified: '2026-08-31',
+    verified: false,
+  },
 ] as const;
 
+/**
+ * Recurring weekly runs per item id, kept separate from the listings so
+ * schedule data stays easy to scan and audit. Only entries verified from a
+ * public source are included; an empty list means the schedule is unknown.
+ */
+const scheduleByItemId: Record<string, Item['schedule']> = {
+  'reddy-to-run': [
+    { day: 'monday', time: '06:30', timeLabel: '6:30am', label: '5K run/walk/jog' },
+    { day: 'wednesday', time: '06:30', timeLabel: '6:30am', label: '5K run/walk/jog' },
+    { day: 'thursday', time: '18:15', timeLabel: '6:15pm', label: '5K run/walk/jog' },
+  ],
+  'mo-bros-wellington': [],
+  'wellington-runners-and-walkers': [
+    { day: 'sunday', label: 'Sunday morning run/walk at ASB Centre' },
+  ],
+  'hutt-valley-runners': [{ day: 'sunday', time: '08:00', timeLabel: '8am' }],
+  '261-fearless-wellington': [{ day: 'saturday', time: '09:00', timeLabel: '9am' }],
+  '445-run-club-wellington': [{ day: 'friday', time: '04:45', timeLabel: '4:45am' }],
+  'early-bird-run-crew': [
+    { day: 'tuesday', time: '06:30', timeLabel: '6:30am' },
+    { day: 'thursday', time: '06:30', timeLabel: '6:30am' },
+  ],
+  'jog-on-wellington': [{ day: 'friday', label: 'Friday morning jog at conversational pace' }],
+  'wellington-big-sunday-runs': [{ day: 'tuesday', time: '18:45', timeLabel: '6:45pm' }],
+  'femmi-run-club-wellington': [{ day: 'friday', time: '06:30', timeLabel: '6:30am' }],
+  'life-in-motion-run-club': [
+    { day: 'wednesday', time: '18:30', timeLabel: '6:30pm' },
+    { day: 'sunday', time: '08:00', timeLabel: '8am' },
+  ],
+  'vic-uni-run-club': [{ day: 'monday', time: '18:30', timeLabel: '6:30pm' }],
+  'worm-wellington-running-meetup': [
+    { day: 'tuesday', time: '18:15', timeLabel: '6:15pm' },
+    { day: 'wednesday', time: '18:15', timeLabel: '6:15pm' },
+    { day: 'thursday', time: '18:30', timeLabel: '6:30pm' },
+  ],
+  'zone-blue-run-club': [
+    { day: 'tuesday', time: '17:30', timeLabel: '5:30pm', label: 'Take It Easy at Shed 1' },
+    { day: 'wednesday', time: '06:00', timeLabel: '6am', label: 'Speed workout at Newtown Park' },
+    { day: 'saturday', time: '08:00', timeLabel: '8am', label: 'Social jog + coffee' },
+    { day: 'sunday', time: '08:00', timeLabel: '8am', label: 'Long run, rotating locations' },
+  ],
+  'olympic-harrier-athletic-club': [{ day: 'saturday', time: '14:00', timeLabel: '2pm' }],
+  'waitangi-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+  'lower-hutt-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+  'trentham-memorial-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+  'ara-harakeke-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+  'kapiti-coast-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+  'otaki-river-parkrun': [{ day: 'saturday', time: '08:00', timeLabel: '8am' }],
+};
+
 /** Validated seed listings, exported for tests and the snapshot builder. */
-export const seedItems: Item[] = itemListSchema.parse(rawItems);
+export const seedItems: Item[] = itemListSchema.parse(
+  rawItems.map((item) => ({
+    ...item,
+    schedule: scheduleByItemId[item.id] ?? [],
+  }))
+);

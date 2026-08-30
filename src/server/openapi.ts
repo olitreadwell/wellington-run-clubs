@@ -165,7 +165,7 @@ export const openApiDocument: Simplify<ReturnType<typeof createDocument>> = crea
         tags: ['directory'],
         summary: 'List listings',
         description:
-          'Public listings with optional q (fuzzy), city and category filters, plus pagination. Records the query for the self-improvement loop.',
+          'Public listings with optional q (fuzzy), city, category, day (monday-sunday) and time (morning/afternoon/evening) filters, plus pagination. Records the query for the self-improvement loop.',
         requestParams: { query: v1ItemsQuerySchema },
         responses: {
           '200': { description: 'List of listings', ...jsonContent(itemListResponseSchema) },

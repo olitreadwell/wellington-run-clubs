@@ -5,6 +5,13 @@ import type { Item } from '@/data/schema';
 import { itemListSchema } from '@/data/schema';
 import { buildDatasetExport } from '@/lib/dataset';
 import type { ScrapeResult } from '@/lib/scrapers/types';
+import {
+  itemRunsInTimeBucket,
+  itemRunsOnDay,
+  timeBucketRange,
+  type DayOfWeek,
+  type TimeBucket,
+} from '@/lib/schedule';
 
 let pool: Pool | null = null;
 let snapshotCache: { items: Item[]; loadedAt: number } | null = null;
@@ -127,7 +134,13 @@ export async function insertScrapeLogs(results: ScrapeResult[]): Promise<void> {
  * @returns Matching item count
  */
 export async function countItems(
-  options: { q?: string; city?: string; category?: string } = {}
+  options: {
+    q?: string;
+    city?: string;
+    category?: string;
+    day?: DayOfWeek;
+    time?: TimeBucket;
+  } = {}
 ): Promise<number> {
   if (!hasDatabase()) {
     let items = readSnapshotItems();
@@ -138,6 +151,9 @@ export async function countItems(
     if (options.city) items = items.filter((item) => item.city === options.city);
     if (options.category)
       items = items.filter((item) => item.categories.includes(options.category ?? ''));
+    if (options.day) items = items.filter((item) => itemRunsOnDay(item, options.day as DayOfWeek));
+    if (options.time)
+      items = items.filter((item) => itemRunsInTimeBucket(item, options.time as TimeBucket));
     return items.filter((item) => !item.optOut && item.active).length;
   }
   const pool = getPool();
@@ -151,6 +167,19 @@ export async function countItems(
   if (options.category) {
     params.push(options.category);
     clauses.push(`data->'categories' ? $${params.length}`);
+  }
+  if (options.day) {
+    params.push(options.day);
+    clauses.push(
+      `EXISTS (SELECT 1 FROM jsonb_array_elements(data->'schedule') AS s WHERE s->>'day' = $${params.length})`
+    );
+  }
+  if (options.time) {
+    const [start, end] = timeBucketRange(options.time);
+    params.push(start, end);
+    clauses.push(
+      `EXISTS (SELECT 1 FROM jsonb_array_elements(data->'schedule') AS s WHERE s->>'time' >= $${params.length - 1} AND s->>'time' < $${params.length})`
+    );
   }
   if (options.q) {
     params.push(`%${options.q}%`);

@@ -43,6 +43,37 @@ export const calendarDateSchema = z
   })
   .strict();
 
+/** Days of the week a recurring run can be scheduled on. */
+export const dayOfWeekSchema = z.enum([
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+  'sunday',
+]);
+
+/** One recurring weekly run: which day, and (when known) the local start time. */
+export const scheduleEntrySchema = z
+  .object({
+    /** Day of the week the run recurs on. */
+    day: dayOfWeekSchema,
+    /** 24h local start time, HH:mm, used for time-of-day filtering. */
+    time: z
+      .string()
+      .regex(/^([01]\d|2[0-3]):[0-5]\d$/, 'expected HH:mm')
+      .optional(),
+    /** Human time as printed on the source, e.g. "6:30am". */
+    timeLabel: z.string().min(1).optional(),
+    /** Short label for the run, e.g. "5K run/walk/jog". */
+    label: z.string().min(1).optional(),
+  })
+  .strict();
+
+/** One recurring weekly run: day and optional local start time. */
+export type ScheduleEntry = z.infer<typeof scheduleEntrySchema>;
+
 /**
  * One listing in the open directory.
  *
@@ -88,6 +119,8 @@ export const itemSchema = z
     active: z.boolean().default(true),
     /** True when the subject asked to be removed; always excluded. */
     optOut: z.boolean().default(false),
+    /** Recurring weekly runs, used by the day/time filters and schedule display. */
+    schedule: z.array(scheduleEntrySchema).default([]),
     /** Dated occurrences, used by the iCal feed. */
     calendarDates: z.array(calendarDateSchema).default([]),
     /** Anything worth knowing, shown on the detail page. */

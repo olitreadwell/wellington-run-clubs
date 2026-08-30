@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-08-30T20:53:18.048Z",
+  "exportedAt": "2026-08-30T21:32:49.574Z",
   "license": "Public data only. Opt-out respected — see /opt-out.",
   "items": [
     {
@@ -26,6 +26,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -48,6 +49,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -70,6 +72,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "14:00",
+          "timeLabel": "2pm"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -92,6 +101,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -114,6 +124,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -138,6 +149,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -159,6 +171,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -180,6 +193,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -201,6 +215,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -226,6 +241,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -248,6 +264,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -270,6 +287,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -292,6 +310,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -313,6 +332,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -335,6 +355,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -357,6 +378,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -381,6 +403,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "tuesday",
+          "time": "18:45",
+          "timeLabel": "6:45pm"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -405,6 +434,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "friday",
+          "time": "06:30",
+          "timeLabel": "6:30am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -429,6 +465,18 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "wednesday",
+          "time": "18:30",
+          "timeLabel": "6:30pm"
+        },
+        {
+          "day": "sunday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -453,6 +501,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "monday",
+          "time": "18:30",
+          "timeLabel": "6:30pm"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -477,6 +532,23 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "tuesday",
+          "time": "18:15",
+          "timeLabel": "6:15pm"
+        },
+        {
+          "day": "wednesday",
+          "time": "18:15",
+          "timeLabel": "6:15pm"
+        },
+        {
+          "day": "thursday",
+          "time": "18:30",
+          "timeLabel": "6:30pm"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -488,20 +560,48 @@
       "location": "Oriental Bay",
       "lat": -41.293,
       "lng": 174.79,
+      "website": "https://www.benedusei.com/zone-blue-run-club",
       "socials": {
         "facebook": "https://www.facebook.com/groups/783741242941223"
       },
       "categories": ["social", "road"],
-      "description": "Social run club meeting Saturdays 8am at Freyberg Pool, Oriental Bay. 30-45 minute runs focused on connection and wellbeing as much as running.",
+      "description": "Social run club founded by run coach Ben Edusei, welcoming runners of all levels. Weekly runs include a chill Tuesday social jog at Shed 1, Wednesday speed work, a Saturday community run with coffee, and a Sunday long run.",
       "source": {
-        "label": "Run Wellington clubs",
-        "url": "https://run.runwellington.com/clubs/zone-blue/"
+        "label": "Zone Blue Run Club (Ben Edusei)",
+        "url": "https://www.benedusei.com/zone-blue-run-club"
       },
-      "lastVerified": "2026-08-30",
+      "lastVerified": "2026-08-31",
       "verified": false,
       "active": true,
       "optOut": false,
-      "calendarDates": []
+      "schedule": [
+        {
+          "day": "tuesday",
+          "time": "17:30",
+          "timeLabel": "5:30pm",
+          "label": "Take It Easy at Shed 1"
+        },
+        {
+          "day": "wednesday",
+          "time": "06:00",
+          "timeLabel": "6am",
+          "label": "Speed workout at Newtown Park"
+        },
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am",
+          "label": "Social jog + coffee"
+        },
+        {
+          "day": "sunday",
+          "time": "08:00",
+          "timeLabel": "8am",
+          "label": "Long run, rotating locations"
+        }
+      ],
+      "calendarDates": [],
+      "notes": "Same organiser (Ben Edusei) as Mo Bros Wellington and the Movember \"[mo]re than a run\" events."
     },
     {
       "id": "wellington-frontrunners",
@@ -525,6 +625,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -549,6 +650,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -574,6 +676,26 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "monday",
+          "time": "06:30",
+          "timeLabel": "6:30am",
+          "label": "5K run/walk/jog"
+        },
+        {
+          "day": "wednesday",
+          "time": "06:30",
+          "timeLabel": "6:30am",
+          "label": "5K run/walk/jog"
+        },
+        {
+          "day": "thursday",
+          "time": "18:15",
+          "timeLabel": "6:15pm",
+          "label": "5K run/walk/jog"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -598,7 +720,9 @@
       "verified": false,
       "active": true,
       "optOut": false,
-      "calendarDates": []
+      "schedule": [],
+      "calendarDates": [],
+      "notes": "Same organiser (run coach Ben Edusei) as Zone Blue Run Club; \"[mo]re than a run\" is the Movember community-run series."
     },
     {
       "id": "wellington-runners-and-walkers",
@@ -624,6 +748,12 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "sunday",
+          "label": "Sunday morning run/walk at ASB Centre"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -646,6 +776,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "sunday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -671,6 +808,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "09:00",
+          "timeLabel": "9am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -696,6 +840,13 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "friday",
+          "time": "04:45",
+          "timeLabel": "4:45am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -717,6 +868,18 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "tuesday",
+          "time": "06:30",
+          "timeLabel": "6:30am"
+        },
+        {
+          "day": "thursday",
+          "time": "06:30",
+          "timeLabel": "6:30am"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -741,6 +904,12 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [
+        {
+          "day": "friday",
+          "label": "Friday morning jog at conversational pace"
+        }
+      ],
       "calendarDates": []
     },
     {
@@ -766,6 +935,7 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
       "calendarDates": []
     },
     {
@@ -788,6 +958,181 @@
       "verified": false,
       "active": true,
       "optOut": false,
+      "schedule": [],
+      "calendarDates": []
+    },
+    {
+      "id": "waitangi-parkrun",
+      "name": "Waitangi parkrun",
+      "slug": "waitangi-parkrun",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Te Aro",
+      "lat": -41.291,
+      "lng": 174.785,
+      "website": "https://www.parkrun.co.nz/waitangi/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am at Waitangi Park, Te Aro. Register once on the parkrun site and bring your barcode — all paces welcome.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/waitangi-parkrun"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
+      "calendarDates": []
+    },
+    {
+      "id": "lower-hutt-parkrun",
+      "name": "Lower Hutt parkrun",
+      "slug": "lower-hutt-parkrun",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Lower Hutt",
+      "lat": -41.209,
+      "lng": 174.908,
+      "website": "https://www.parkrun.co.nz/lowerhutt/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am on the Hutt riverbank. Register once on the parkrun site and bring your barcode — all paces welcome.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/lower-hutt-parkrun"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
+      "calendarDates": []
+    },
+    {
+      "id": "trentham-memorial-parkrun",
+      "name": "Trentham Memorial parkrun",
+      "slug": "trentham-memorial-parkrun",
+      "city": "Upper Hutt",
+      "region": "Wellington region",
+      "location": "Trentham",
+      "lat": -41.1325,
+      "lng": 175.0298,
+      "website": "https://www.parkrun.co.nz/trenthammemorial/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am around Trentham Memorial Park. Register once on the parkrun site and bring your barcode — all paces welcome.",
+      "source": {
+        "label": "Trentham Memorial parkrun Facebook",
+        "url": "https://www.facebook.com/trenthammemorialparkrun/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
+      "calendarDates": []
+    },
+    {
+      "id": "ara-harakeke-parkrun",
+      "name": "Ara Harakeke parkrun",
+      "slug": "ara-harakeke-parkrun",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Plimmerton",
+      "lat": -41.08,
+      "lng": 174.87,
+      "website": "https://www.parkrun.co.nz/araharakeke/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road", "trail"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am along the Ara Harakeke Pathway at Plimmerton. Register once on the parkrun site and bring your barcode.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/ara-harakeke-parkrun"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
+      "calendarDates": []
+    },
+    {
+      "id": "kapiti-coast-parkrun",
+      "name": "Kapiti Coast parkrun",
+      "slug": "kapiti-coast-parkrun",
+      "city": "Waikanae",
+      "region": "Wellington region",
+      "location": "Kapiti Coast",
+      "lat": -40.875,
+      "lng": 175.064,
+      "website": "https://www.parkrun.co.nz/kapiticoast/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road", "trail"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am along the Waikanae River track. Register once on the parkrun site and bring your barcode — all welcome.",
+      "source": {
+        "label": "Kapiti Coast parkrun Facebook",
+        "url": "https://www.facebook.com/KapitiCoastparkrun/"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
+      "calendarDates": []
+    },
+    {
+      "id": "otaki-river-parkrun",
+      "name": "Otaki River parkrun",
+      "slug": "otaki-river-parkrun",
+      "city": "Otaki",
+      "region": "Wellington region",
+      "location": "Kapiti Coast",
+      "lat": -40.7583,
+      "lng": 175.155,
+      "website": "https://www.parkrun.co.nz/otakiriver/",
+      "categories": ["parkrun", "community", "beginners", "walkers", "road", "trail"],
+      "description": "Free, weekly, timed 5km run, jog or walk every Saturday 8am on the Ōtaki Riverbank. Register once on the parkrun site and bring your barcode — all welcome.",
+      "source": {
+        "label": "NZ Running club directory",
+        "url": "https://www.nzrunning.co.nz/run-clubs/otaki-river-parkrun"
+      },
+      "lastVerified": "2026-08-31",
+      "verified": false,
+      "active": true,
+      "optOut": false,
+      "schedule": [
+        {
+          "day": "saturday",
+          "time": "08:00",
+          "timeLabel": "8am"
+        }
+      ],
       "calendarDates": []
     }
   ]

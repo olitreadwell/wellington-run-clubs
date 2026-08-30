@@ -2,6 +2,13 @@ import type { Item } from '@/data/schema';
 import { countItems as countItemsFromDb, readSnapshotItems, hasDatabase, getPool } from '@/lib/db';
 import { countByCategory, countByCity, listSourceLabels } from '@/lib/dataset';
 import { searchItems } from '@/lib/search';
+import {
+  timeBucketRange,
+  itemRunsInTimeBucket,
+  itemRunsOnDay,
+  type DayOfWeek,
+  type TimeBucket,
+} from '@/lib/schedule';
 
 /** How many recent items list endpoints return when no limit is given. */
 export const DEFAULT_ITEM_LIMIT = 50;
@@ -21,6 +28,8 @@ export async function listItems(
     q?: string;
     city?: string;
     category?: string;
+    day?: DayOfWeek;
+    time?: TimeBucket;
     limit?: number;
     offset?: number;
   } = {}
@@ -32,6 +41,10 @@ export async function listItems(
   if (options.city) items = items.filter((item) => item.city === options.city);
   if (options.category)
     items = items.filter((item) => item.categories.includes(options.category ?? ''));
+  const day = options.day;
+  const time = options.time;
+  if (day) items = items.filter((item) => itemRunsOnDay(item, day));
+  if (time) items = items.filter((item) => itemRunsInTimeBucket(item, time));
   const limit = Math.min(options.limit ?? DEFAULT_ITEM_LIMIT, MAX_ITEM_LIMIT);
   return items.slice(options.offset ?? 0, (options.offset ?? 0) + limit);
 }
@@ -43,7 +56,7 @@ export async function listItems(
  * @returns Matching item count
  */
 export async function countItems(
-  options: { q?: string; city?: string; category?: string } = {}
+  options: { q?: string; city?: string; category?: string; day?: DayOfWeek; time?: TimeBucket } = {}
 ): Promise<number> {
   return countItemsFromDb(options);
 }
@@ -162,7 +175,15 @@ export async function setItemOptOut(id: string): Promise<boolean> {
  * @returns Public listings in display order
  */
 export async function listItemsFromDb(
-  options: { q?: string; city?: string; category?: string; limit?: number; offset?: number } = {}
+  options: {
+    q?: string;
+    city?: string;
+    category?: string;
+    day?: DayOfWeek;
+    time?: TimeBucket;
+    limit?: number;
+    offset?: number;
+  } = {}
 ): Promise<Item[]> {
   const pool = getPool();
   if (!pool) return [];
@@ -175,6 +196,19 @@ export async function listItemsFromDb(
   if (options.category) {
     params.push(options.category);
     clauses.push(`data->'categories' ? $${params.length}`);
+  }
+  if (options.day) {
+    params.push(options.day);
+    clauses.push(
+      `EXISTS (SELECT 1 FROM jsonb_array_elements(data->'schedule') AS s WHERE s->>'day' = $${params.length})`
+    );
+  }
+  if (options.time) {
+    const [start, end] = timeBucketRange(options.time);
+    params.push(start, end);
+    clauses.push(
+      `EXISTS (SELECT 1 FROM jsonb_array_elements(data->'schedule') AS s WHERE s->>'time' >= $${params.length - 1} AND s->>'time' < $${params.length})`
+    );
   }
   if (options.q) {
     params.push(`%${options.q}%`);

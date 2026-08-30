@@ -26,6 +26,18 @@ describe('item repository (snapshot mode)', () => {
     expect(city.every((item) => item.city === 'Wellington')).toBe(true);
     const category = await listItems({ category: 'harriers' });
     expect(category.every((item) => item.categories.includes('harriers'))).toBe(true);
+    const saturday = await listItems({ day: 'saturday', limit: 200 });
+    expect(saturday.length).toBeGreaterThan(0);
+    expect(saturday.every((item) => item.schedule.some((entry) => entry.day === 'saturday'))).toBe(
+      true
+    );
+    const morning = await listItems({ time: 'morning', limit: 200 });
+    expect(morning.length).toBeGreaterThan(0);
+    expect(
+      morning.every((item) =>
+        item.schedule.some((entry) => entry.time !== undefined && entry.time < '12:00')
+      )
+    ).toBe(true);
     const page = await listItems({ limit: 1, offset: 0 });
     expect(page.length).toBe(1);
   });

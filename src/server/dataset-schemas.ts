@@ -13,6 +13,10 @@ export const v1ItemsQuerySchema = z.object({
   q: z.string().max(200).optional(),
   city: z.string().max(200).optional(),
   category: z.string().max(200).optional(),
+  day: z
+    .enum(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'])
+    .optional(),
+  time: z.enum(['morning', 'afternoon', 'evening']).optional(),
   limit: z.coerce.number().int().min(1).max(200).default(50),
   offset: z.coerce.number().int().min(0).default(0),
 });

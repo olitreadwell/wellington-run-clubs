@@ -1,5 +1,6 @@
 import { buildExportFromSource } from '@/lib/db';
 import { toErrorResponse } from '@/lib/errors';
+import { scheduleEntryLabel } from '@/lib/schedule';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,6 +38,7 @@ export async function GET(request: Request): Promise<Response> {
       'categories',
       'description',
       'website',
+      'schedule',
       'source',
       'lastVerified',
       'verified',
@@ -51,6 +53,7 @@ export async function GET(request: Request): Promise<Response> {
         item.categories.join('; '),
         item.description ?? '',
         item.website ?? '',
+        item.schedule.map(scheduleEntryLabel).join('; '),
         item.source.url,
         item.lastVerified,
         item.verified,

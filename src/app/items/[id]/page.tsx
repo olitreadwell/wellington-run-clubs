@@ -81,6 +81,25 @@ export default async function ItemDetailPage({
         <p className="text-sm text-neutral-500 dark:text-neutral-400">{item.notes}</p>
       ) : null}
 
+      {item.schedule.length > 0 ? (
+        <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            Recurring runs
+          </h2>
+          <ul className="mt-2 space-y-1">
+            {item.schedule.map((entry, index) => (
+              <li key={`${entry.day}-${entry.time ?? index}`} className="text-sm">
+                <span className="font-medium capitalize">{entry.day}</span>
+                {entry.timeLabel ? <span> · {entry.timeLabel}</span> : null}
+                {entry.label ? (
+                  <span className="text-neutral-500 dark:text-neutral-400"> — {entry.label}</span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <dl className="grid gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800 sm:grid-cols-2">
         {item.website ? (
           <>

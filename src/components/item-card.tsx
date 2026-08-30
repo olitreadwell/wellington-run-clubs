@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Item } from '@/data/schema';
 import { isStale } from '@/lib/stale';
+import { ScheduleList } from '@/components/schedule-list';
 
 /** A compact listing card used on browse and home pages. */
 export function ItemCard({ item }: { item: Item }): React.ReactElement {
@@ -25,6 +26,7 @@ export function ItemCard({ item }: { item: Item }): React.ReactElement {
       <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
         {[item.location, item.city, ...item.categories].filter(Boolean).join(' · ')}
       </p>
+      <ScheduleList item={item} />
       {item.description ? (
         <p className="mt-2 line-clamp-2 text-sm text-neutral-600 dark:text-neutral-300">
           {item.description}
