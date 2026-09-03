@@ -2,13 +2,7 @@
 // dataset endpoints behave as documented (ETag round-trips, 404s, CSV).
 // Usage: BASE_URL=http://localhost:3521 node scripts/contract-test.mjs
 
-import { readFileSync } from 'node:fs';
-
 const base = process.env.BASE_URL ?? 'http://localhost:3001';
-const snapshot = JSON.parse(
-  readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8')
-);
-const seedId = snapshot.items?.[0]?.id ?? 'wellington-scottish-athletics';
 
 let failures = 0;
 
@@ -31,15 +25,29 @@ async function main() {
   check(paths.includes('/api/v1/items'), 'spec declares /api/v1/items');
   check(paths.includes('/api/v1/items/[id]'), 'spec declares /api/v1/items/{id}');
 
+  const itemsRes = await fetch(`${base}/api/v1/items?limit=200`);
+  const items = await itemsRes.json();
+  check(Array.isArray(items.data), '/api/v1/items returns { data: [...] }');
+  check(typeof items.meta?.total === 'number', '/api/v1/items returns meta.total');
+  check(
+    items.data.every((item) => typeof item.id === 'string' && typeof item.name === 'string'),
+    'every item has id + name'
+  );
+
+  // Resolve detail checks against a real seed item so the test adapts to
+  // whichever dataset the repo ships.
+  const firstItemId = items.data[0]?.id;
+  check(typeof firstItemId === 'string', 'items expose an id for detail checks');
+
   for (const path of paths) {
     const methods = Object.keys(spec.paths[path]);
     for (const method of methods) {
       if (method !== 'get') continue;
       const operation = spec.paths[path][method];
-      let resolvedPath = path.replace(/\[id\]/g, seedId);
+      let resolvedPath = path.replace(/\[id\]/g, firstItemId ?? '');
       for (const param of operation.parameters ?? []) {
         if (param.in === 'path') {
-          resolvedPath = resolvedPath.replace(`{${param.name}}`, seedId);
+          resolvedPath = resolvedPath.replace(`{${param.name}}`, firstItemId ?? '');
         }
       }
       const url = new URL(`${base}${resolvedPath}`);
@@ -51,16 +59,7 @@ async function main() {
     }
   }
 
-  const itemsRes = await fetch(`${base}/api/v1/items`);
-  const items = await itemsRes.json();
-  check(Array.isArray(items.data), '/api/v1/items returns { data: [...] }');
-  check(typeof items.meta?.total === 'number', '/api/v1/items returns meta.total');
-  check(
-    items.data.every((item) => typeof item.id === 'string' && typeof item.name === 'string'),
-    'every item has id + name'
-  );
-
-  const detailRes = await fetch(`${base}/api/v1/items/${seedId}`);
+  const detailRes = await fetch(`${base}/api/v1/items/${firstItemId}`);
   check(detailRes.status === 200, 'GET /api/v1/items/{id} resolves a seed item');
   const missingRes = await fetch(`${base}/api/v1/items/definitely-not-a-listing`);
   check(missingRes.status === 404, 'GET /api/v1/items/{id} 404 for unknown');
