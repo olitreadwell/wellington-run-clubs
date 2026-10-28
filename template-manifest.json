@@ -175,8 +175,6 @@
         "if": "next.config.*"
       }
     ],
-    "merge": [
-      "package.json"
-    ]
+    "merge": ["package.json"]
   }
 }
